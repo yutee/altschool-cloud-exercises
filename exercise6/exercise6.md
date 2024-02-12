@@ -1,4 +1,5 @@
-### Task : Version Control (Git) :
+### Exercise 6 : Version Control (Git) :
+#### Task
 
 * You already have Github account, aso setup a GitLab account if you don’t have one already
 * You already have a altschool-cloud-exercises project, clone the project to your local system

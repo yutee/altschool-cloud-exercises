@@ -1,5 +1,9 @@
+### Exercise 2 : Linux Process Management:
+* Linux Process Management
+* Linux File System
+* Application Package Management
 
-### Task : Linux Process Management:
+#### Task
 
 Install PHP 7.4 on your local linux machine using the ppa:ondrej/php package repo.
 
