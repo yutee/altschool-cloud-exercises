@@ -1,4 +1,4 @@
-### Exercise 2 : Linux Process Management:
+### Exercise 4 : Linux Process Management:
 * Linux Process Management
 * Linux File System
 * Application Package Management
