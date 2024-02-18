@@ -1,4 +1,4 @@
 ### About the Repository
 
 #### Introduction
-Not sure yet
+Learning the feathery texture of the cloud with Alt School
