@@ -7,7 +7,7 @@ _Install Apache web server and host a custom website on it. People will be calle
 
 #### Solutions
 
-Successfully installed Apache web server on my Ubuntu LTS 22.04 and hosting a lightweight javascript app on it.
+Successfully installed Apache web server on my Ubuntu LTS 22.04 and hosted a lightweight javascript app on it.
 
 These are the steps I took and the commands I used during the process.
 
