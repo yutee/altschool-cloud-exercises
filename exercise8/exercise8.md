@@ -32,8 +32,9 @@ Create another bash script (sendmail.sh) to send contents of (log.txt) to a spec
 ___
 
 __Step4__
-Define another cronjob to run the script (sendmail.sh) at the last hour of each day
-![screenshot]()
+Define another cronjob to run the script (send_mail.sh) at the last hour of each day
+
+![screenshot](images/step4.png)
 
 ___
 
