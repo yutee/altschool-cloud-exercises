@@ -1,14 +1,21 @@
-DIR=$PWD
-TIME=$(date +'%Y_%m_%d_%H-%M-%S')
+#!/bin/bash
+# Expected input: ./backup.sh folder folder1
+# Expected output:  folder.tar.gz
+
+TIME=$(date +'%m-%d_%H-%M-%S')
 SOURCE_DIR=$1
 DESTINATION_DIR=$2
-BACKUP_DIR="$destination_directory/backup_$timestamp.tar.gz"
 
-if [[ -d "$DESTINATION_DIR" ]]; then
-  echo "$DESTINATION_DIR already exists"
+if [ -z "$SOURCE_DIR" || -z "$DESTINATION_DIR" ]
+then
+    echo "Cannot process without source and destination directory"
 else
-   mkdir $DESTINATION_DIR
-  echo "Successfully Created backup directory: ($DESTINATION_DIR)"
-fi
+    tar -czvf "$SOURCE_DIR-backup-$TIME.tar.gz" "$SOURCE_DIR"
+    mv "$SOURCE_DIR-backup-$TIME.tar.gz" "$DESTINATION_DIR"
+    echo "Backup of $SOURCE_DIR created and saved in $DESTINATION_DIR..."
+fi 
 
-# tar -cvzf "$BACKUP_DIR" -C "$(dirname "$SOURCE_DIR")" "$(basename "$SOURCE_DIR")" && echo "Backup Created Succesfully: $BACKUP_DIR"
+# Additionally, you can check if... 
+# - the backup already exist
+# - check if the given directory is empty
+# - check if the destination directory exist, if not create one
