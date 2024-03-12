@@ -6,7 +6,8 @@ TIME=$(date +'%m-%d_%H-%M-%S')
 SOURCE_DIR=$1
 DESTINATION_DIR=$2
 
-if [ -z "$SOURCE_DIR" || -z "$DESTINATION_DIR" ]
+if [[ -z "$SOURCE_DIR" || -z "$DESTINATION_DIR" ]]
+#if [ -z "$SOURCE_DIR" -o -z "$DESTINATION_DIR" ]
 then
     echo "Cannot process without source and destination directory"
 else

@@ -38,3 +38,11 @@ done
 echo -e " \n The total number of files in '$directory' = $number_of_files"
 
  echo -e " \$1: $1 \n \$2: $2 \n \$3: $3"
+
+
+
+
+
+
+
+ 
