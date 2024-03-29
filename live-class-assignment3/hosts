@@ -1,0 +1,5 @@
+[debianServers]
+172.16.249.131 apache_package_name=apache2
+ 
+[rhelServers]
+172.16.249.132 apache_package_name=httpd

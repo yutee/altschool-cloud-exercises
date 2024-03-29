@@ -1,0 +1,39 @@
+---
+
+- name: Host static websites using Apache on multiple Linux distros
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install Apache on all servers
+      package:
+        name: "{{ apache_package_name }}"
+        state: present
+
+    - name: Install git on all servers
+      package:
+        name: git
+        state: present
+
+    - name: Clone repository
+      git:
+        repo: https://github.com/yutee/job-listing.git
+        dest: /var/www/html/job-listing
+
+    - name: Start Apache on RHEL
+      service:
+        name: httpd
+        state: started
+      when: ansible_os_family == "RedHat"
+
+    - name: Enable Apache on RHEL
+      service:
+        name: httpd
+        enabled: yes
+      when: ansible_os_family == "RedHat"
+
+    - name: Restart Apache
+      service:
+        name: httpd
+        state: restarted
+      when: ansible_os_family == "RedHat"
