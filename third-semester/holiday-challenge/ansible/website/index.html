@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Server Hostname and IP</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div>
+            <h1>Server Information</h1>
+            <p style="font-weight: bold;">Server Hostname: <span style="font-weight: normal;" id="server-hostname"></span></p>
+            <p style="font-weight: bold;">Server IP: <span style="font-weight: normal;" id="server-ip"></span></p>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var hostname = window.location.hostname;
+        var ip = window.location.host;
+
+        document.getElementById("server-hostname").innerText = `${hostname}`;
+        document.getElementById("server-ip").innerText = `${ip}`;
+    });
+</script>
+</html>
