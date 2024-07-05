@@ -10,6 +10,8 @@ third-semester/live-class-assignment-2/terraform-website/terraform.tfvars
 # Ignore Terraform plugin directory
 third-semester/live-class-assignment-2/terraform-website/.terraform/
 
+third-semester/live-class-assignment-2/terraform-website/terraform.lock.hcl
+
 # Ignore logs and temporary files
 third-semester/live-class-assignment-2/terraform-website/*.log
 third-semester/live-class-assignment-2/terraform-website/*.swp
