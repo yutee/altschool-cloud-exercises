@@ -1,0 +1,15 @@
+# Ignore Terraform state files
+third-semester/live-class-assignment-2/terraform-website/*.tfstate
+third-semester/live-class-assignment-2/terraform-website/*.tfstate.*
+third-semester/live-class-assignment-2/terraform-website/terraform.tfstate.backup
+third-semester/live-class-assignment-2/terraform-website/terraform.tfstate.backup.*
+
+# Ignore Terraform variables file
+third-semester/live-class-assignment-2/terraform-website/terraform.tfvars
+
+# Ignore Terraform plugin directory
+third-semester/live-class-assignment-2/terraform-website/.terraform/
+
+# Ignore logs and temporary files
+third-semester/live-class-assignment-2/terraform-website/*.log
+third-semester/live-class-assignment-2/terraform-website/*.swp
